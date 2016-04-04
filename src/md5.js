@@ -109,7 +109,7 @@
       method = nodeWrap(method);
     }
     method.create = function () {
-      return new Md5();
+      return new Md5(false);
     };
     method.update = function (message) {
       return method.create().update(message);
